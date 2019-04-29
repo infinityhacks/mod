@@ -29,6 +29,13 @@
 										{if $ann != null}
 										<p>{$ann->content}</p>
 										{/if}
+										<hr>
+										<p>Telegram群:<a href="https://t.me/joinchat/Euxz5wrIjlxnkU7z3KVnXQ" title="游戏娘群组" target="_blank"> 加入</a></p>
+                                        <p>Telegram公告板:<a href="https://t.me/youxiniang" title="游戏娘-公告" target="_blank"> 加入</a></p>
+										<hr>
+										<p>老铁，您每拉一位用户注册，当 TA 充值时您就会获得 TA 充值金额的 25 % 的提成。点击<a href="/user/invite">这里</a>前往生成邀请码</p>
+										<hr>
+                                        <p><a href="/downloads/客户端教程.pdf">╰(*°▽°*)╯客户端使用教程点我</a></p>
 									</div>
 
 								</div>
@@ -74,6 +81,9 @@
 															<li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ssr_router"><i class="icon icon-lg">router</i>&nbsp;路由器</a>
 															</li>
+															<li>
+																<a class="waves-attach" data-toggle="tab" href="#ssr_sub"><i class="icon icon-lg">sync</i>&nbsp;订阅</a>
+															</li>
 														</ul>
 													</nav>
 													<div class="tab-pane fade active in" id="all_ssr_info">
@@ -106,7 +116,7 @@
 														{/if}
 													</div>
 													<div class="tab-pane fade" id="all_ssr_windows">
-														<p><a href="/ssr-download/ssr-win.7z">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
+														<p><a href="/ssr-download/ssr-win.zip">下载</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
 															(1)下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个（普通端口）</a>或者<a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 -- 从配置文件导入服务器，选择这个文件，<br>
 															(2)点击<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这里（普通端口）</a>或者<a class="copy-text" data-clipboard-text="{$ssr_url_all}">这个(单端口多用户）</a>，然后右键小飞机 -- 从剪贴板复制地址<br>
 															(3)(推荐)右键小飞机--服务器--SSR服务器订阅设置，将订阅地址设置为下面的地址，其他参数留空，确定之后再更新 SSR 服务器订阅。<br>
@@ -121,13 +131,21 @@
 														<p><a href="/ssr-download/ssr-mac.dmg">下载</a>，安装，然后下载<a href="/user/getpcconf?is_mu=0&is_ss=0">这个(普通端口)</a>或者<a  href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，运行程序，小飞机上右键 服务器列表 子菜单 的 “导入服务器配置文件...” 导入这个文件，然后选择一个合适的服务器，更新一下PAC，然后开启系统代理即可上网。</p>
 													</div>
 													<div class="tab-pane fade" id="all_ssr_ios">
-														<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，然后在 Safari 中点击<a href="{$ssr_url_all}">这个（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个（单端口多用户）</a>，然后点击确定，就可以批量添加节点。</p>
-														<p>SSR 订阅地址：<br>
+														{if $user->class >= 2}
+															<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a></p>
+															<p>免费下载帐号(下载前请先用此苹果帐号登录):</p>
+															<p>e8frqs27@icloud.com</p>
+															<p>Yy223322</p>
+														{else}
+															<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket[正式付费用户这里会自动显示苹果帐号供下载,1元体验除外]</a></p>
+														{/if}
+														然后在 Safari 中点击<a href="{$ssr_url_all}">这个（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个（单端口多用户）</a>，然后点击确定，就可以批量添加节点。</p>
+														<p>SSR 订阅地址，您可以在节点列表处添加订阅来自动更新节点：<br>
 															普通端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br>
 															单端口多用户端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>
 														</p>
 													</div>
-													<div class="tab-pane fade" id="all_ssr_android">
+														<div class="tab-pane fade" id="all_ssr_android">
 														<p><a href="/ssr-download/ssr-android.apk">下载</a>，安装，然后在手机上默认浏览器中点击<a href="{$ssr_url_all}">这个链接（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个链接（单端口多用户）</a>，然后点击确定，批量添加完节点，然后路由选择绕过大陆，右上角开启就可以上网了。同时提供一个 ACL 地址，<a href="/link/{$acl_token}">长按复制地址</a>到客户端里应用即可。</p>
 														<p>SSR 订阅地址，您可以在节点列表处添加订阅来自动更新节点：<br>
 															普通端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br>
@@ -140,6 +158,11 @@
 														或者这个单端口多用户的<br>
 														<code>wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=0 | bash && echo -e "\n0 */3 * * * wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=0 | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond </code><br>
 														执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
+													</div>
+													<div class="tab-pane fade" id="ssr_sub">
+														<p>SSR 订阅地址，您可以在节点列表处添加订阅来自动更新节点：</p>
+														<p>普通端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code></p>
+														<p>单端口多用户端口地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code></p>
 													</div>
 
 												</div>
@@ -163,6 +186,9 @@
 															</li>
 															<li>
 																<a class="waves-attach" data-toggle="tab" href="#all_ss_router"><i class="icon icon-lg">router</i>&nbsp;路由器</a>
+															</li>
+															<li>
+																<a class="waves-attach" data-toggle="tab" href="#ss_sub"><i class="icon icon-lg">sync</i>&nbsp;订阅</a>
 															</li>
 														</ul>
 													</nav>
@@ -216,6 +242,11 @@
 														<code>wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=1 | bash && echo -e "\n0 */3 * * * wget -O- {$baseUrl}/link/{$router_token_without_mu}?is_ss=1 | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond </code><br>
 														执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
 													</div>
+													<div class="tab-pane fade" id="ss_sub">
+														<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，然后在 Safari 中点击<a href="{$ss_url_all}">这个（普通端口）</a>或者<a href="{$ss_url_all_mu}">这个（单端口多用户）</a>，然后点击确定，就可以批量添加节点。</p>
+														<p>iOS 下载<a href="/link/{$ios_token}?is_ss=1">这个（普通端口）</a>或者<a href="/link/{$ios_token}?is_ss=1&is_mu=1">这个（单端口多用户）</a>，导入到 Surge 中，然后就可以随意切换服务器上网了。</p>
+													</div>
+
 												</div>
 											</div>
 										</div>

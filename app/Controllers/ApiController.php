@@ -26,11 +26,11 @@ class ApiController extends BaseController
         $accessToken = $id = $args['token'];
         $storage = Factory::createTokenStorage();
         $token = $storage->get($accessToken);
-        if ($token==null) {
-            $res['ret'] = 0;
-            $res['msg'] = "token is null";
-            return $this->echoJson($response, $res);
-        }
+        #if ($token==null) {
+        #    $res['ret'] = 0;
+        #    $res['msg'] = "token is null";
+        #    return $this->echoJson($response, $res);
+        #}
         $res['ret'] = 1;
         $res['msg'] = "ok";
         $res['data'] = $token;

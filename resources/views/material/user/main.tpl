@@ -272,7 +272,7 @@
 							</li>
 							
 							
-							{if $config['enable_donate']=='true'}
+							{if $config['enable_donate']=='true' && $config['enable_donate_menu']=='true'}
 							<li>
 								<a href="/user/donate">
 									<i class="icon icon-lg">attach_money</i>&nbsp;捐赠公示
@@ -304,11 +304,13 @@
 								</a>
 							</li>
 							
+							{if $config['enable_lookingglass']=='true'}
 							<li>
 								<a href="/user/lookingglass">
 									<i class="icon icon-lg">youtube_searched_for</i>&nbsp;观察窗
 								</a>
 							</li>
+                            {/if}
 						</ul>
 
 						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>

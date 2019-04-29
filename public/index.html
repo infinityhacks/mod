@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>游戏娘</title>
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/frontend/img/favicons/favicon.png">
+
+        <link rel="icon" type="image/png" href="assets/frontend/img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="assets/frontend/img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/frontend/img/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="assets/frontend/img/favicons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="assets/frontend/img/favicons/favicon-192x192.png" sizes="192x192">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/frontend/img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/frontend/img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/frontend/img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/frontend/img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/frontend/img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/frontend/img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/frontend/img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/frontend/img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/frontend/img/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+        <!-- Bootstrap and OneUI CSS framework -->
+        <link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/frontend/css/oneui.css">
+        <link rel="stylesheet" id="css-theme" href="assets/frontend/css/themes/smooth.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/frontend/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <div id="page-container" class="side-scroll header-navbar-fixed header-navbar-transparent">
+
+            <!-- Header -->
+            <header id="header-navbar" class="content-mini content-mini-full">
+                <div class="content-boxed">
+                    <!-- Header Navigation Right -->
+                    <ul class="nav-header pull-right">
+                        <li class="hidden-md hidden-lg">
+                            <!-- Toggle class helper (for main header navigation below in small screens), functionality initialized in App() -> uiToggleClass() -->
+                            <button class="btn btn-link text-white pull-right" data-toggle="class-toggle" data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- END Header Navigation Right -->
+
+                    <!-- Main Header Navigation -->
+                    <ul class="js-nav-main-header nav-main-header pull-right">
+                        <li class="hidden-md hidden-lg clearfix push-20">
+                            <!-- Toggle class helper (for main header navigation in small screens), functionality initialized in App() -> uiToggleClass() -->
+                            <button class="btn btn-link text-white pull-right" data-toggle="class-toggle" data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                                <i class="fa fa-times"></i>
+                            </button>
+
+                            <!-- Logo -->
+                            <a class="h5" href="/">
+                                <span class="h4 font-w600 text-white">游戏娘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="/">首页</a>
+                        </li>
+                        <li>
+                            <a href="#feature">特性</a>
+                        </li>
+                        <li>
+                            <a href="#price">价格</a>
+                        </li>
+                        <li>
+                            <a href="/auth/login">登录</a>
+                        </li>
+                        <li>
+                            <a href="/auth/register">注册</a>
+                        </li>
+                    </ul>
+                    <!-- END Main Header Navigation -->
+
+                    <!-- Header Navigation Left -->
+                    <ul class="nav-header pull-left">
+                        <li class="header-content">
+                            <a class="h5" href="/">
+                                <span class="h4 font-w600 text-white">游戏娘</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END Header Navigation Left -->
+                </div>
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Hero Content -->
+                <div class="bg-image">
+                    <div class="bg-primary-dark-op">
+                        <section class="content content-full content-boxed overflow-hidden">
+                            <!-- Section Content -->
+                            <div class="push-100-t push-50 text-center" style="height: 300px">
+                                <h1 class="h1 text-white push-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">尽情游戏吧，剩下的交给我们!</h1>
+                                <div style="height: 100px"></div>
+                                <a class="btn btn-rounded btn-noborder btn-lg btn-primary visibility-hidden" data-toggle="appear" data-class="animated bounceIn" data-timeout="800" href="/auth/login">现在加入</a>
+                            </div>
+                            <!-- END Section Content -->
+                        </section>
+                    </div>
+                </div>
+                <!-- END Hero Content -->
+
+                <!-- Classic Features #1 -->
+                <div class="bg-white">
+                    <section class="content content-boxed">
+                        <div id="feature" class="text-center row items-push-3x nice-copy">
+                          <h1>特性</h1>
+                          <hr>
+                        </div>
+                        <!-- Section Content -->
+                        <div class="text-center row items-push-3x nice-copy">
+                            <div class="col-sm-4">
+                                <div class="text-center push">
+                                    <span class="item item-2x item-circle border">
+                                        <i class="si si-vector text-flat"></i>
+                                    </span>
+                                </div>
+                                <h3 class="h5 font-w600 text-uppercase text-center push-10">全平台支持</h3>
+                                <p>基于目前主流的解决方案，针对包括Windows/Linux/iOS/Android/Mac的全平台支持，详尽的安装使用教程，您不需要有专业技术背景依然可以轻松使用</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="text-center push-30">
+                                    <span class="item item-2x item-circle border">
+                                       <i class="si si-badge text-city"></i>
+                                    </span>
+                                </div>
+                                <h3 class="h5 font-w600 text-center push-10">网络质量</h3>
+                                <p>我们不以数量给您带来选择焦虑，而是持续将每条线路优化到极致，我们的目标是您玩游戏时感觉不到我们的存在</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="text-center push">
+                                    <span class="item item-2x item-circle border">
+                                        <i class="si si-heart"></i>
+                                    </span>
+                                </div>
+                                <h3 class="h5 font-w600 text-uppercase texo-center push-10">配置简单</h3>
+                                <p>便捷配置，一键订阅所有节点，动态更新节点</p>
+                            </div>
+                        </div>
+                        <!-- END Section Content -->
+                    </section>
+                </div>
+                <!-- END Classic Features #1 -->
+
+                <div class="bg-white">
+                    <section class="content content-boxed overflow-hidden">
+                        <div id="price" class="text-center row items-push-3x nice-copy">
+                          <h1>价格</h1>
+                          <hr>
+                        </div>
+                        <!-- Section Content -->
+                        <div class="row push-20-t push-20">
+                            <div class="col-sm-6 col-lg-2 visibility-hidden" data-toggle="appear" data-offset="50" data-timeout="200" data-class="animated fadeInUp">
+                                <!-- Startup Plan -->
+                                <a class="block block-bordered block-link-hover3 text-center" href="/user/shop">
+                                    <div class="block-header">
+                                        <h3 class="block-title">铁</h3>
+                                    </div>
+                                    <div class="block-content block-content-full bg-gray-lighter">
+                                        <div class="h1 font-w700 push-10">1元</div>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table table-borderless table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>1G</strong>流量</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>试用</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10+</strong>节点</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>12x5</strong>工单支持</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="block-content block-content-mini block-content-full bg-gray-lighter">
+                                        <span class="btn btn-default">现在加入</span>
+                                    </div>
+                                </a>
+                                <!-- END Startup Plan -->
+                            </div>
+                            <div class="col-sm-6 col-lg-2 visibility-hidden" data-toggle="appear" data-offset="50" data-timeout="200" data-class="animated fadeInUp">
+                                <!-- Startup Plan -->
+                                <a class="block block-bordered block-link-hover3 text-center" href="/user/shop">
+                                    <div class="block-header">
+                                        <h3 class="block-title">铝</h3>
+                                    </div>
+                                    <div class="block-content block-content-full bg-gray-lighter">
+                                        <div class="h1 font-w700 push-10">8元</div>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table table-borderless table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>20G</strong>流量</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>月付</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10+</strong>节点</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>12x5</strong>工单支持</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="block-content block-content-mini block-content-full bg-gray-lighter">
+                                        <span class="btn btn-default">现在加入</span>
+                                    </div>
+                                </a>
+                                <!-- END Startup Plan -->
+                            </div>
+                            <div class="col-sm-6 col-lg-2 visibility-hidden" data-toggle="appear" data-offset="50" data-timeout="200" data-class="animated fadeInUp">
+                                <!-- Startup Plan -->
+                                <a class="block block-bordered block-link-hover3 text-center" href="/user/shop">
+                                    <div class="block-header">
+                                        <h3 class="block-title text-primary">铜</h3>
+                                    </div>
+                                    <div class="block-content block-content-full bg-gray-lighter">
+                                        <div class="h1 font-w700 text-primary push-10">15元</div>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table table-borderless table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>100G</strong>流量</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>月付</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10+</strong>节点</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>12x5</strong>工单支持</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="block-content block-content-mini block-content-full bg-gray-lighter">
+                                        <span class="btn btn-primary">现在加入</span>
+                                    </div>
+                                </a>
+                                <!-- END Startup Plan -->
+                            </div>
+                            <div class="col-sm-6 col-lg-2 visibility-hidden" data-toggle="appear" data-offset="50" data-timeout="200" data-class="animated fadeInUp">
+                                <!-- Startup Plan -->
+                                <a class="block block-bordered block-link-hover3 text-center" href="/user/shop">
+                                    <div class="block-header">
+                                        <h3 class="block-title">银</h3>
+                                    </div>
+                                    <div class="block-content block-content-full bg-gray-lighter">
+                                        <div class="h1 font-w700 push-10">40元</div>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table table-borderless table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>400G</strong>流量</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>季付</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10+</strong>节点</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>12x5</strong>工单支持</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="block-content block-content-mini block-content-full bg-gray-lighter">
+                                        <span class="btn btn-default">现在加入</span>
+                                    </div>
+                                </a>
+                                <!-- END Startup Plan -->
+                            </div>
+                            <div class="col-sm-6 col-lg-2 visibility-hidden" data-toggle="appear" data-offset="50" data-timeout="400" data-class="animated fadeInUp">
+                                <!-- Business Plan -->
+                                <a class="block block-bordered block-link-hover3 text-center" href="/user/shop">
+                                    <div class="block-header">
+                                        <h3 class="block-title">金</h3>
+                                    </div>
+                                    <div class="block-content block-content-full bg-gray-lighter">
+                                        <div class="h1 font-w700 push-10">75元</div>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table table-borderless table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>1000G</strong>流量</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>半年付</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10+</strong>节点</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>12x7</strong>工单支持</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="block-content block-content-mini block-content-full bg-gray-lighter">
+                                        <span class="btn btn-default">现在加入</span>
+                                    </div>
+                                </a>
+                                <!-- END Business Plan -->
+                            </div>
+                            <div class="col-sm-6 col-lg-2 visibility-hidden" data-toggle="appear" data-offset="50" data-timeout="600" data-class="animated fadeInUp">
+                                <!-- VIP Plan -->
+                                <a class="block block-bordered block-link-hover3 text-center" href="/user/shop">
+                                    <div class="block-header">
+                                        <h3 class="block-title text-primary">钻</h3>
+                                    </div>
+                                    <div class="block-content block-content-full bg-gray-lighter">
+                                        <div class="h1 font-w700 text-primary push-10">140元</div>
+                                    </div>
+                                    <div class="block-content">
+                                        <table class="table table-borderless table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>3000G</strong>流量</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>年付</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>10+</strong>节点</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>12x7</strong>工单支持</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="block-content block-content-mini block-content-full bg-gray-lighter">
+                                        <span class="btn btn-primary">现在加入</span>
+                                    </div>
+                                </a>
+                                <!-- END VIP Plan -->
+                            </div>
+                        </div>
+                        <!-- END Section Content -->
+                    </section>
+                </div>
+                <!-- END Pricing -->
+
+                <!-- Get Started -->
+                <div class="bg-image">
+                    <div class="bg-primary-dark-op">
+                        <section class="content content-full content-boxed">
+                            <!-- Section Content -->
+                        <div class="push-20-t push-20 text-center">
+                            <h1 class="h1 text-white push-20 visibility-hidden" data-toggle="appear">别让不愉快的网络，影响了愉快的心情！</h1>
+                            <a class="btn btn-rounded btn-noborder btn-lg btn-primary visibility-hidden" data-toggle="appear" data-class="animated bounceIn" data-timeout="800" href="/auth/login">现在加入</a>
+                        </div>
+                            <!-- END Section Content -->
+                        </section>
+                    </div>
+                </div>
+                <!-- END Get Started -->
+
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="bg-white">
+                <div class="content content-boxed">
+                    <!-- Footer Navigation -->
+                    <div class="row push-30-t items-push-2x">
+                        <div class="col-sm-6">
+                            <h3 class="h5 font-w600 text-uppercase push-20">产品</h3>
+                            <ul class="list list-simple-mini font-s13">
+                                <li>
+                                    <a class="font-w600" href="#feature">特性</a>
+                                </li>
+                                <li>
+                                    <a class="font-w600" href="#price">价格</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="h5 font-w600 text-uppercase push-20">Support</h3>
+                            <ul class="list list-simple-mini font-s13">
+                                <li>
+                                    <a class="font-w600" href="/auth/login">登录</a>
+                                </li>
+                                <li>
+                                    <a class="font-w600" href="/auth/register">注册</a>
+                                </li>
+                                <li>
+                                    <a class="font-w600" href="/user/ticket">工单系统</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END Footer Navigation -->
+
+                    <!-- Copyright Info -->
+                    <div class="font-s12 push-20 clearfix">
+                        <hr class="remove-margin-t">
+                        <div class="pull-right">
+                            Crafted with <i class="fa fa-heart text-city"></i> by Gamer
+                        </div>
+                        <div class="pull-left">
+                            &copy; <span class="js-year-copy"></span>
+                        </div>
+                    </div>
+                    <!-- END Copyright Info -->
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+        <script src="assets/frontend/js/core/jquery.min.js"></script>
+        <script src="assets/frontend/js/core/bootstrap.min.js"></script>
+        <script src="assets/frontend/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/frontend/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/frontend/js/core/jquery.appear.min.js"></script>
+        <script src="assets/frontend/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/frontend/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/frontend/js/core/js.cookie.min.js"></script>
+        <script src="assets/frontend/js/app.js"></script>
+
+        <!-- Page JS Code -->
+        <script>
+            jQuery(function () {
+                // Init page helpers (Appear + CountTo plugins)
+                App.initHelpers(['appear', 'appear-countTo']);
+            });
+        </script>
+    </body>
+</html>

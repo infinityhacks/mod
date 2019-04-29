@@ -152,6 +152,7 @@ class NodeController extends AdminController
         }
 
         Telegram::Send("节点信息被修改~".$request->getParam('name'));
+       
 
         $rs['ret'] = 1;
         $rs['msg'] = "修改成功";

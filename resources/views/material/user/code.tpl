@@ -31,7 +31,7 @@
 							<div class="card-main">
 								<div class="card-inner">
 									<div class="card-inner">
-										<p class="card-heading">充值码</p>
+										<p class="card-heading">充值码 <a href="https://t.cn/Eq9Azci" target="_blank">点击购买充值码</a></p>
 										<p>当前余额：{$user->money} 元</p>
 										<div class="form-group form-group-label">
 											<label class="floating-label" for="code">充值码</label>
