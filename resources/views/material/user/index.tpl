@@ -134,8 +134,8 @@
 														{if $user->class >= 2}
 															<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a></p>
 															<p>免费下载帐号(下载前请先用此苹果帐号登录):</p>
-															<p>e8frqs27@icloud.com</p>
-															<p>Yy223322</p>
+															<p>tj29n1zn@icloud.com</p>
+															<p>Aa112211</p>
 														{else}
 															<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket[正式付费用户这里会自动显示苹果帐号供下载,1元体验除外]</a></p>
 														{/if}

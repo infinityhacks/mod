@@ -365,7 +365,9 @@ class URL
 
             $user = $mu_user;
 
-            $node_name .= " - ".$mu_port." 端口单端口多用户";
+            //去订阅节点名字里的单端口
+            //$node_name .= " - ".$mu_port." 端口单端口多用户";
+            $node_name .= " - ".$mu_port;
         }
 
         if($is_ss) {

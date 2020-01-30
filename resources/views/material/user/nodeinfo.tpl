@@ -110,7 +110,7 @@
 												<p><i class="icon icon-lg">laptop_windows</i>&nbsp;<a href="https://github.com/breakwa11/shadowsocks-rss/wiki/Python-client">Linux</a></p>
 												<p><i class="icon icon-lg">android</i>&nbsp;<a href="/ssr-download/ssr-android.apk">Android</a></p>
                                                 {if $user->class >=2}
-                                                    <p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a> ( 下载帐号: e8frqs27@icloud.com 密码: Yy223322 )</p>
+                                                    <p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a> ( 下载帐号: tj29n1zn@icloud.com 密码: Aa112211 )</p>
                                                 {else}
                                                     <p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a></p>
                                                 {/if}
@@ -126,7 +126,7 @@
 												<p><i class="icon icon-lg">android</i>&nbsp;<a href="/ssr-download/ss-android.apk">Android</a></p>
 												<p><i class="icon icon-lg">android</i>&nbsp;<a href="/ssr-download/ss-android-obfs.apk">Android Obfs插件</a></p>
                                                 {if $user->class >=2}
-                                                    <p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a> ( 下载帐号: e8frqs27@icloud.com 密码: Yy223322 )</p>
+                                                    <p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a> ( 下载帐号: tj29n1zn@icloud.com 密码: Aa112211 )</p>
                                                 {else}
                                                     <p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a></p>
                                                 {/if}

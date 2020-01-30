@@ -1752,6 +1752,8 @@ FINAL,Proxy';
 
     public static function GetSSRSub($user, $mu = 0, $max = 0)
     {
-        return Tools::base64_url_encode(URL::getAllUrl($user, $mu, 0, 1));
+        // return Tools::base64_url_encode(URL::getAllUrl($user, $mu, 0, 1));
+        // 所有的订阅都只开启单端口模式
+        return Tools::base64_url_encode(URL::getAllUrl($user, 1, 0, 1));
     }
 }
