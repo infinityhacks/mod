@@ -339,7 +339,7 @@ class URL
         )->first();
 
         $temp = explode("#", $node->info);
-        $node_port = $user->port;
+        $node_port = $mu_port;
         if ($temp[1]!=null){
             $node_name = $node->name;
             if (is_numeric($temp[1])) {
@@ -367,7 +367,7 @@ class URL
 
             //去订阅节点名字里的单端口
             //$node_name .= " - ".$mu_port." 端口单端口多用户";
-            $node_name .= " - ".$mu_port;
+            //$node_name .= " - ".$mu_port;
         }
 
         if($is_ss) {
