@@ -178,11 +178,11 @@
 																					</span></p>
 
 																					<p>端口：<span class="label label-brand-red">
-																					{if explode("#", $node->info)[0] == '#'}
-																						{explode("#", $node->info)[1]}
-																				  {else}
+                                                                                    {if $node->info != "可用"}
+                                                                                        {$node->info}
+                                                                                    {else}
 																						{$single_muport['user']['port']}
-																				  {/if}
+                                                                                    {/if}
 																					</span></p>
 
 																					<p>加密方式：<span class="label label-brand">
