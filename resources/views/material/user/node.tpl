@@ -46,7 +46,7 @@
 												{$id=$id+1}
 
 													<div class="tile tile-collapse">
-														<div data-toggle="tile" data-target="#heading{$node_order->$prefix}">
+														{* <div data-toggle="tile" data-target="#heading{$node_order->$prefix}">
 															<div class="tile-side pull-left" data-ignore="tile">
 																<div class="avatar avatar-sm">
 																	<span class="icon {if $node_heartbeat[$prefix]=='在线'}text-green{else}{if $node_heartbeat[$prefix]=='暂无数据'}text-orange{else}text-red{/if}{/if}">{if $node_heartbeat[$prefix]=="在线"}backup{else}{if $node_heartbeat[$prefix]=='暂无数据'}report{else}warning{/if}{/if}</span>
@@ -55,7 +55,7 @@
 															<div class="tile-inner">
 																<div class="text-overflow">{$prefix} | <i class="icon icon-lg">person</i> {$node_alive[$prefix]} | <i class="icon icon-lg">build</i> {$node_method[$prefix]} | <i class="icon icon-lg">traffic</i> {if isset($node_bandwidth[$prefix])==true}{$node_bandwidth[$prefix]}{else}N/A{/if}</div>
 															</div>
-														</div>
+														</div> *}
 														<div class="collapsible-region collapse" id="heading{$node_order->$prefix}">
 															<div class="tile-sub">
 
@@ -167,7 +167,7 @@
 																				<div class="card-main">
 																					<div class="card-inner">
 																					<p class="card-heading" >
-																						<a href="javascript:void(0);" onClick="urlChange('{$node->id}',{$single_muport['server']->server},{if $relay_rule != null}{$relay_rule->id}{else}0{/if})">{$prefix} {if $relay_rule != null} - {$relay_rule->dist_node()->name}{/if} - 单端口多用户 Shadowsocks - {$single_muport['server']->server} 端口</a>
+																						<a href="javascript:void(0);" onClick="urlChange('{$node->id}',{$single_muport['server']->server},{if $relay_rule != null}{$relay_rule->id}{else}0{/if})">{$prefix} {if $relay_rule != null} - {$relay_rule->dist_node()->name}{/if}</a>
 																						<span class="label label-brand-accent">{$node->status}</span>
 																					</p>
 
@@ -209,9 +209,9 @@
 																						{$node->traffic_rate}
 																					</span></p>
 
-																					<p>{$node->info}</p>
+																					<p>{$node->info}</p
 
-																					 </div>
+																					</div>
 
 																				</div>
 																			</div>
