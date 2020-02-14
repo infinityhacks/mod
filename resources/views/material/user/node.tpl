@@ -46,7 +46,7 @@
 												{$id=$id+1}
 
 													<div class="tile tile-collapse">
-														{* <div data-toggle="tile" data-target="#heading{$node_order->$prefix}">
+														  <div data-toggle="tile" data-target="#heading{$node_order->$prefix}">
 															<div class="tile-side pull-left" data-ignore="tile">
 																<div class="avatar avatar-sm">
 																	<span class="icon {if $node_heartbeat[$prefix]=='在线'}text-green{else}{if $node_heartbeat[$prefix]=='暂无数据'}text-orange{else}text-red{/if}{/if}">{if $node_heartbeat[$prefix]=="在线"}backup{else}{if $node_heartbeat[$prefix]=='暂无数据'}report{else}warning{/if}{/if}</span>
@@ -55,7 +55,7 @@
 															<div class="tile-inner">
 																<div class="text-overflow">{$prefix} | <i class="icon icon-lg">person</i> {$node_alive[$prefix]} | <i class="icon icon-lg">build</i> {$node_method[$prefix]} | <i class="icon icon-lg">traffic</i> {if isset($node_bandwidth[$prefix])==true}{$node_bandwidth[$prefix]}{else}N/A{/if}</div>
 															</div>
-														</div> *}
+														</div>
 														<div class="collapsible-region collapse" id="heading{$node_order->$prefix}">
 															<div class="tile-sub">
 
@@ -178,7 +178,11 @@
 																					</span></p>
 
 																					<p>端口：<span class="label label-brand-red">
+																					{if explode("#", $node->info)[0] == '#'}
+																						{explode("#", $node->info)[1]}
+																				  {else}
 																						{$single_muport['user']['port']}
+																				  {/if}
 																					</span></p>
 
 																					<p>加密方式：<span class="label label-brand">
@@ -209,7 +213,7 @@
 																						{$node->traffic_rate}
 																					</span></p>
 
-																					<p>{$node->info}</p
+																					{* <p>{$node->info}</p *}
 
 																					</div>
 
